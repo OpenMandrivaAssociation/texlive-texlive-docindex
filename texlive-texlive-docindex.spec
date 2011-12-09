@@ -1,11 +1,11 @@
-# revision 24621
+# revision 24795
 # category TLCore
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-texlive-docindex
-Version:	20111122
+Version:	20111209
 Release:	1
 Summary:	top-level TeX Live doc.html, etc
 Group:		Publishing
@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texlive-docindex.
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 These files are regenerated as needed, which is often, so we
