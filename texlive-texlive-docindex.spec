@@ -28,7 +28,6 @@ for the process.
 %doc %{_tlpkgdir}/texmf
 %doc %{_tlpkgdir}/texmf-dist
 %doc %{_texmfdir}/scripts/texlive/var/texcatalogue.keywords
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -39,8 +38,6 @@ for the process.
 %install
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf %{buildroot}%{_datadir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
 cp -fpa doc.html %{buildroot}%{_tlpkgdir}
 pushd %{buildroot}%{_tlpkgdir}
     # create symlinks so that links in doc.html (should) work
