@@ -38,6 +38,7 @@ for the process.
 %install
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf %{buildroot}%{_datadir}
+mkdir -p %{buildroot}%{_tlpkgdir}
 cp -fpa doc.html %{buildroot}%{_tlpkgdir}
 pushd %{buildroot}%{_tlpkgdir}
     # create symlinks so that links in doc.html (should) work
