@@ -1,12 +1,12 @@
-# revision 24932
+# revision 24795
 # category TLCore
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-texlive-docindex
-Version:	20111226
-Release:	2
+Version:	20120109
+Release:	1
 Summary:	top-level TeX Live doc.html, etc
 Group:		Publishing
 URL:		http://tug.org/texlive
