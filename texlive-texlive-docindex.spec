@@ -1,11 +1,11 @@
-# revision 26281
+# revision 27294
 # category TLCore
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-texlive-docindex
-Version:	20120611
+Version:	20120808
 Release:	1
 Summary:	top-level TeX Live doc.html, etc
 Group:		Publishing
@@ -16,18 +16,27 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texlive-docindex.
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
+Requires(post):	texlive-kpathsea
 
 %description
 These files are regenerated as needed, which is often, so we
 make them a separate package.  See the tl-update-auto script
 for the process.
 
+%post
+    %{_sbindir}/texlive.post
+
+%postun
+    if [ $1 -eq 0 ]; then
+	%{_sbindir}/texlive.post
+    fi
+
 #-----------------------------------------------------------------------
 %files
 %doc %{_tlpkgdir}/texmf
 %doc %{_tlpkgdir}/texmf-dist
+%{_texmfdir}/scripts/texlive/var/texcatalogue.keywords
 %doc %{_tlpkgdir}/doc.html
-%doc %{_texmfdir}/scripts/texlive/var/texcatalogue.keywords
 
 #-----------------------------------------------------------------------
 %prep
