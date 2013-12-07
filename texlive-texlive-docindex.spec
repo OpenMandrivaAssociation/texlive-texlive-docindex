@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-texlive-docindex
 Version:	20131130
-Release:	2
+Release:	3
 Summary:	top-level TeX Live doc.html, etc
 Group:		Publishing
 URL:		http://tug.org/texlive
