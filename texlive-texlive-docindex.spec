@@ -1,11 +1,11 @@
-# revision 33166
+# revision 33190
 # category TLCore
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-texlive-docindex
-Version:	20140317
+Version:	20140318
 Release:	1
 Summary:	top-level TeX Live doc.html, etc
 Group:		Publishing
