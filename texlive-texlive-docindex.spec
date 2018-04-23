@@ -5,7 +5,7 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-texlive-docindex
-Version:	20180213
+Version:	20180303
 Release:	1
 Summary:	top-level TeX Live doc.html, etc
 Group:		Publishing
